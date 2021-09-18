@@ -1,0 +1,50 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Spartan:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+$quote-font: 'Roboto Mono', monospace;
+$quote-author: 'Reenie Beanie', cursive;
+
+@mixin equal-padding ($x) {
+    padding: $x $x $x $x;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-box {
+    @include equal-padding(50px);
+    position: relative;
+    max-width: 35vw;
+    max-height: 50vh;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 15em;
+    text-align: center;
+
+    h2 {
+        font-family: $quote-font;
+    }
+
+    h3 {
+        padding: 10px 0 0 0;
+        font-family: $quote-author;
+        font-size: 35px;
+    }
+}
+
+.buttons {
+    padding: 20px 0 0 0;
+
+    a {
+        float: left;
+    }
+
+    button {
+        float: right;
+    }
+}
+
