@@ -5,6 +5,8 @@
 $quote-font: 'Roboto Mono', monospace;
 $quote-author: 'Reenie Beanie', cursive;
 
+$color: #6867A6;
+
 @mixin equal-padding ($x) {
     padding: $x $x $x $x;
 }
@@ -13,6 +15,10 @@ $quote-author: 'Reenie Beanie', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    background-color: $color;
 }
 
 #quote-box {
@@ -27,12 +33,14 @@ $quote-author: 'Reenie Beanie', cursive;
 
     h2 {
         font-family: $quote-font;
+        color: $color;
     }
 
     h3 {
         padding: 10px 0 0 0;
         font-family: $quote-author;
         font-size: 35px;
+        color: $color;
     }
 }
 
